@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script>(function () { var s = localStorage.getItem('theme'); document.documentElement.setAttribute('data-theme', s ? s : (window.matchMedia('(prefers-color-scheme:dark)').matches ? 'dark' : 'light')); }());</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Sonu Kumar — Jr. Web Designer & Developer</title>
+    <meta name="description"
+        content="Jr. Web Designer & Developer based in Chandigarh. Passionate about creating engaging user experiences and clean, efficient code. Currently open to new opportunities.">
+    <!-- Fonts — preloaded async to avoid render-blocking -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="">
+    <link rel="stylesheet" as="style"
+        href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&amp;family=Inter:ital,wght@0,300;0,400;0,600;1,300&amp;display=swap"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Inter:ital,wght@0,300;0,400;0,600;1,300&display=swap" />
+    </noscript>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+</head>
+
+<body>
+
+    <!-- ==================== PRELOADER ==================== -->
+
+
+    <!-- ==================== CURSOR ==================== -->
+    <div id="preloader" aria-hidden="true"
+        style="translate: none; rotate: none; scale: none; transform: translate(0%, -100%); display: none;">
+        <div class="pl-name"><span
+                style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">David
+                Rodriguez</span></div>
+        <div class="pl-bar-wrap">
+            <div class="pl-bar" id="plBar" style="width: 100%;"></div>
+        </div>
+    </div>
+    <div class="cursor" id="cursor" aria-hidden="true" style="opacity: 0; transform: translate(1402px, 233px);">
+        <!-- Miro-style: arrow tip + Guest pill -->
+        <div class="cursor-arrow">
+            <svg width="22" height="26" viewBox="0 0 22 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2 2L2 21L6.8 16.2L10.4 24L13.4 22.6L9.8 14.8L17 14.8L2 2Z" fill="white" stroke="#0C0C0B"
+                    stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round"></path>
+            </svg>
+        </div>
+        <div class="cursor-label" id="cursorLabel">
+            <span class="cursor-label-dot"></span>
+            <span id="cursorLabelText" style="opacity: 1;">Guest</span>
+        </div>
+    </div>
+
+    <!-- ==================== NAV ==================== -->
+    <nav id="nav" class="">
+        <a href="#hero" class="nav-logo" style="opacity: 1;">dvdrod</a>
+        <div class="nav-right" style="opacity: 1;">
+            <ul class="nav-links">
+                <li><a href="#work">Work</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="theme-btn" id="themeBtn" aria-label="Toggle colour scheme">
+                <span class="t-icon" id="tIcon">◑</span>
+                <span id="tLabel">Dark</span>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+
+        <!-- ==================== HERO ==================== -->
+        <section id="hero">
+            <p class="hero-eyebrow"><span
+                    style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">Senior Product
+                    Designer</span></p>
+
+            <h1 class="hero-title">
+                <span class="tl"><span
+                        style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">David</span></span>
+                <span class="tl"><span
+                        style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">Rodri&shy;guez</span></span>
+            </h1>
+
+            <div class="hero-bottom">
+                <p class="hero-desc"
+                    style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                    <span>Barcelona raised, Berlin based. Eight years of experience across banking, fitness, streaming
+                        and food tech.</span>
+                </p>
+                <div class="hero-right">
+                    <div class="pill available"
+                        style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                        <span class="pill-dot"></span>Available for work</div>
+                    <div class="pill"
+                        style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                        Berlin, Germany</div>
+                    <div class="pill"
+                        style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                        Awwwards Young Jury</div>
+                </div>
+            </div>
+
+            <div class="scroll-hint" aria-hidden="true" style="opacity: 1;">
+                <div class="sh-line"></div>
+                <span>Scroll</span>
+            </div>
+        </section>
+
+        <!-- ==================== MARQUEE ==================== -->
+        <div class="marquee-wrap" aria-hidden="true">
+            <div class="marquee-track">
+                <span class="mq-item">Systems Thinking</span>
+                <span class="mq-item">Design Systems</span>
+                <span class="mq-item">0→1 Product Work</span>
+                <span class="mq-item">Cross-functional</span>
+                <span class="mq-item">Data-informed Design</span>
+                <span class="mq-item">Prototyping</span>
+                <span class="mq-item">A/B Testing</span>
+                <span class="mq-item">Research &amp; Synthesis</span>
+                <span class="mq-item">Best Slack Memes</span>
+                <span class="mq-item">Stakeholder Alignment</span>
+                <span class="mq-item">Design × Engineering</span>
+                <span class="mq-item">AI-assisted Workflows</span>
+                <span class="mq-item">Product Strategy</span>
+                <span class="mq-item">Good Vibes</span>
+                <span class="mq-item">Systems Thinking</span>
+                <span class="mq-item">Design Systems</span>
+                <span class="mq-item">0→1 Product Work</span>
+                <span class="mq-item">Cross-functional</span>
+                <span class="mq-item">Data-informed Design</span>
+                <span class="mq-item">Prototyping</span>
+                <span class="mq-item">A/B Testing</span>
+                <span class="mq-item">Research &amp; Synthesis</span>
+                <span class="mq-item">Best Slack Memes</span>
+                <span class="mq-item">Stakeholder Alignment</span>
+                <span class="mq-item">Design × Engineering</span>
+                <span class="mq-item">AI-assisted Workflows</span>
+                <span class="mq-item">Product Strategy</span>
+                <span class="mq-item">Good Vibes</span>
+            </div>
+        </div>
+
+        <!-- ==================== WORK ==================== -->
+        <section id="work">
+            <div class="s-header">
+                <div>
+                    <p class="s-label">Selected Projects</p>
+                    <h2 class="s-title"><span class="tl"><span
+                                style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">Work</span></span>
+                    </h2>
+                </div>
+            </div>
+
+            <div class="projects">
+
+                <!-- 01 - CaixaBank (hidden - re-enable by removing 'hidden') -->
+                <article class="pcard p-caixabank" data-index="0" onclick="window.location='caixabank.html'"
+                    style="cursor:none;" hidden="">
+                    <div class="pcard-inner">
+                        <div class="pcard-info">
+                            <div class="pcard-top">
+                                <span class="pnum">01</span>
+                                <div class="tags">
+                                    <span class="tag">Mobile App</span>
+                                    <span class="tag">Design System</span>
+                                </div>
+                            </div>
+                            <div class="pcard-mid">
+                                <p class="pcompany">VASS × CaixaBank</p>
+                                <h3 class="pname">Banking App Redesign</h3>
+                                <p class="pyear">2017 - 2019 · Barcelona</p>
+                            </div>
+                            <div class="pmetrics">
+                                <div class="pmetric">
+                                    <span class="pm-val">4×</span>
+                                    <span class="pm-label">International awards in 2018</span>
+                                </div>
+                                <div class="pmetric">
+                                    <span class="pm-val">#1</span>
+                                    <span class="pm-label">Best Mobile Banking App, W. Europe</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pcard-vis">
+                            <div class="pcard-bg"></div>
+                            <div class="blob blob1"></div>
+                            <div class="blob blob2"></div>
+                            <div class="p-arrow" aria-hidden="true">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                    <path d="M2 12L12 2M12 2H4M12 2V10" stroke="white" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 02 - Gymondo Go Premium (hidden) -->
+                <article class="pcard p-gymondo1" data-index="1" onclick="window.location='gymondo-premium.html'"
+                    style="cursor:none;" hidden="">
+                    <div class="pcard-inner">
+                        <div class="pcard-info">
+                            <div class="pcard-top">
+                                <span class="pnum">01</span>
+                                <div class="tags">
+                                    <span class="tag">Conversion</span>
+                                    <span class="tag">A/B Testing</span>
+                                </div>
+                            </div>
+                            <div class="pcard-mid">
+                                <p class="pcompany">Gymondo</p>
+                                <h3 class="pname">Go Premium Screen</h3>
+                                <p class="pyear">2020 - 2021 · Berlin</p>
+                            </div>
+                            <div class="pmetrics">
+                                <div class="pmetric">
+                                    <span class="pm-val">+17%</span>
+                                    <span class="pm-label">Conversion rate increase</span>
+                                </div>
+                                <div class="pmetric">
+                                    <span class="pm-val">−52%</span>
+                                    <span class="pm-label">Drop-off in onboarding</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pcard-vis">
+                            <div class="pcard-bg"></div>
+                            <div class="blob blob1"></div>
+                            <div class="blob blob2"></div>
+                            <div class="p-arrow" aria-hidden="true">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                    <path d="M2 12L12 2M12 2H4M12 2V10" stroke="white" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 03 - Gymondo Challenges (hidden) -->
+                <article class="pcard p-gymondo2" data-index="2" onclick="window.location='gymondo-challenges.html'"
+                    style="cursor:none;" hidden="">
+                    <div class="pcard-inner">
+                        <div class="pcard-info">
+                            <div class="pcard-top">
+                                <span class="pnum">02</span>
+                                <div class="tags">
+                                    <span class="tag">New Feature</span>
+                                    <span class="tag">Retention</span>
+                                </div>
+                            </div>
+                            <div class="pcard-mid">
+                                <p class="pcompany">Gymondo</p>
+                                <h3 class="pname">Challenges System</h3>
+                                <p class="pyear">2021 - 2022 · Berlin</p>
+                            </div>
+                            <div class="pmetrics">
+                                <div class="pmetric">
+                                    <span class="pm-val">−21%</span>
+                                    <span class="pm-label">Drop-off reduced after 3 months</span>
+                                </div>
+                                <div class="pmetric">
+                                    <span class="pm-val">5</span>
+                                    <span class="pm-label">Usability test sessions</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pcard-vis">
+                            <div class="pcard-bg"></div>
+                            <div class="blob blob1"></div>
+                            <div class="blob blob2"></div>
+                            <div class="p-arrow" aria-hidden="true">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                    <path d="M2 12L12 2M12 2H4M12 2V10" stroke="white" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 04 - Zattoo (hidden - re-enable by removing 'hidden') -->
+                <article class="pcard p-zattoo" data-index="3" onclick="window.location='zattoo.html'"
+                    style="cursor:none;" hidden="">
+                    <div class="pcard-inner">
+                        <div class="pcard-info">
+                            <div class="pcard-top">
+                                <span class="pnum">04</span>
+                                <div class="tags">
+                                    <span class="tag">TV Platform</span>
+                                    <span class="tag">Design System</span>
+                                </div>
+                            </div>
+                            <div class="pcard-mid">
+                                <p class="pcompany">Zattoo</p>
+                                <h3 class="pname">Android TV Platform</h3>
+                                <p class="pyear">2023 - 2025 · Berlin</p>
+                            </div>
+                            <div class="pmetrics">
+                                <div class="pmetric">
+                                    <span class="pm-val">D2C<br>B2B</span>
+                                    <span class="pm-label">Two product tracks, one team</span>
+                                </div>
+                                <div class="pmetric">
+                                    <span class="pm-val">React</span>
+                                    <span class="pm-label">Native → React migration</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pcard-vis">
+                            <div class="pcard-bg"></div>
+                            <div class="blob blob1"></div>
+                            <div class="blob blob2"></div>
+                            <div class="p-arrow" aria-hidden="true">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                    <path d="M2 12L12 2M12 2H4M12 2V10" stroke="white" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+
+                <!-- 01 - NeoTaste Onboarding (hidden) -->
+                <article class="pcard p-nt-onboarding" data-index="0"
+                    onclick="window.location='neotaste-onboarding.html'" style="cursor:none;" hidden="">
+                    <div class="pcard-inner">
+                        <div class="pcard-info">
+                            <div class="pcard-top">
+                                <span class="pnum">01</span>
+                                <div class="tags">
+                                    <span class="tag">Onboarding</span>
+                                    <span class="tag">UX Research</span>
+                                </div>
+                            </div>
+                            <div class="pcard-mid">
+                                <p class="pcompany">NeoTaste</p>
+                                <h3 class="pname">Onboarding Redesign</h3>
+                                <p class="pyear">2025 - 2026 · Berlin</p>
+                            </div>
+                            <div class="pmetrics">
+                                <div class="pmetric">
+                                    <span class="pm-val">−63%</span>
+                                    <span class="pm-label">Drop-off during onboarding</span>
+                                </div>
+                                <div class="pmetric">
+                                    <span class="pm-val">+38%</span>
+                                    <span class="pm-label">Day-1 activation rate</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pcard-vis">
+                            <div class="pcard-bg"></div>
+                            <div class="blob blob1"></div>
+                            <div class="blob blob2"></div>
+                            <div class="p-arrow" aria-hidden="true">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                    <path d="M2 12L12 2M12 2H4M12 2V10" stroke="white" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 02 - NeoTaste Quests -->
+                <article class="pcard p-nt-quests" data-index="1" onclick="window.location='neotaste-quests.html'"
+                    style="cursor: none; translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                    <div class="pcard-inner">
+                        <div class="pcard-info">
+                            <div class="pcard-top">
+                                <span class="pnum">01</span>
+                            </div>
+                            <div class="pcard-mid">
+                                <p class="pyear">NeoTaste / 2025 - 2026</p>
+                                <h3 class="pname">Turning free trial users into<br>loyal members</h3>
+                                <div class="tags">
+                                    <span class="tag">Retention</span>
+                                    <span class="tag">Gamification</span>
+                                </div>
+                            </div>
+                            <div class="pmetrics">
+                                <div class="pmetric">
+                                    <span class="pm-val">+22%</span>
+                                    <span class="pm-label">Trial-to-paid<br>conversion uplift</span>
+                                </div>
+                                <div class="pmetric">
+                                    <span class="pm-val">~48%</span>
+                                    <span class="pm-label">Quest completion rate</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pcard-vis">
+                            <div class="pcard-bg"></div>
+                            <img class="pcard-img" src="images/quest-case.webp" alt="Quest System case study cover">
+                            <div class="pcard-img-overlay"></div>
+                            <div class="p-arrow" aria-hidden="true" style="z-index:3;">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                    <path d="M2 12L12 2M12 2H4M12 2V10" stroke="white" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 03 - NeoTaste Referral -->
+                <article class="pcard p-nt-referral pcard--wip" data-index="2"
+                    style="cursor: none; translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                    <div class="pcard-inner">
+                        <div class="pcard-info">
+                            <div class="pcard-top" style="display:flex;align-items:center;gap:14px;">
+                                <span class="pnum">02</span>
+                                <span class="wip-badge"><span class="wip-badge-dot"></span>Work in progress</span>
+                            </div>
+                            <div class="pcard-mid">
+                                <p class="pyear">NeoTaste / 2025 - 2026</p>
+                                <h3 class="pname">Finding the right incentive to double referral volume</h3>
+                                <div class="tags">
+                                    <span class="tag">Growth</span>
+                                    <span class="tag">A/B Testing</span>
+                                </div>
+                            </div>
+                            <div class="pmetrics">
+                                <div class="pmetric">
+                                    <span class="pm-val">+148%</span>
+                                    <span class="pm-label">Total referral<br>volume growth</span>
+                                </div>
+                                <div class="pmetric">
+                                    <span class="pm-val">5.2%</span>
+                                    <span class="pm-label">Final referral rate<br>(was 2.1%)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pcard-vis">
+                            <div class="pcard-bg"></div>
+                            <img class="pcard-img" src="images/referral-case.webp"
+                                alt="Referral A/B Test case study cover">
+                            <div class="pcard-img-overlay"></div>
+                            <div class="p-arrow" aria-hidden="true" style="z-index:3;">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                    <path d="M2 12L12 2M12 2H4M12 2V10" stroke="white" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+
+            <div class="pdf-strip"
+                style="margin-top: 48px; padding-top: 48px; border-top: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap; translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                <div>
+                    <p style="font-size:14px;font-weight:600;color:var(--text);margin-bottom:4px;">Looking for more?</p>
+                    <p style="font-size:13px;color:var(--muted);line-height:1.5;">More work from my time at Gymondo is
+                        available as a PDF, including a conversion project and a retention feature.</p>
+                </div>
+                <a href="David Rodriguez - Portfolio.pdf" target="_blank" rel="noopener" class="cv-btn">
+                    View PDF
+                    <svg width="12" height="12" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M2 12L12 2M12 2H4M12 2V10"></path>
+                    </svg>
+                </a>
+            </div>
+
+        </section>
+
+        <!-- ==================== ABOUT ==================== -->
+        <section id="about">
+            <div class="s-header">
+                <div>
+                    <p class="s-label">My story</p>
+                    <h2 class="s-title"><span class="tl"><span
+                                style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">About</span></span>
+                    </h2>
+                </div>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-bio">
+                    <p style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                        <strong>Eight years in product design</strong>, working from Barcelona agencies to Berlin
+                        startups. I've designed for banks, fitness platforms, a streaming service and a food tech app
+                        with over 2 million users.</p>
+                    <p style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                        <strong>My process is research-first.</strong> I want to understand why users behave the way
+                        they do before I open Figma.</p>
+                    <p style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                        <strong>I own the full design scope,</strong> from early research to shipped components. I like
+                        working in teams where decisions get debated properly, not just handed down.</p>
+                    <p style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                        Since 2018, I've served on the <strong>Awwwards Young Jury</strong>, which keeps me honest about
+                        craft quality across the industry.</p>
+                    <a href="CV_David_Rodriguez.pdf" target="_blank" rel="noopener" class="cv-btn"
+                        style="margin-top: 20px; translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                        View CV
+                        <svg width="12" height="12" viewBox="0 0 14 14" fill="none" stroke="currentColor"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M2 12L12 2M12 2H4M12 2V10"></path>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="about-side">
+
+                    <div
+                        style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                        <h3 class="detail-h">Experience</h3>
+                        <ul class="exp-list">
+                            <li class="exp-item">
+                                <div class="ei-l">
+                                    <span class="ei-co">NeoTaste</span>
+                                    <span class="ei-role">Product Designer</span>
+                                </div>
+                                <span class="ei-yr">2025 - Now</span>
+                            </li>
+                            <li class="exp-item">
+                                <div class="ei-l">
+                                    <span class="ei-co">Zattoo</span>
+                                    <span class="ei-role">Product Designer</span>
+                                </div>
+                                <span class="ei-yr">2023 - 2025</span>
+                            </li>
+                            <li class="exp-item">
+                                <div class="ei-l">
+                                    <span class="ei-co">Gymondo</span>
+                                    <span class="ei-role">Senior UI/UX Designer</span>
+                                </div>
+                                <span class="ei-yr">2019 - 2022</span>
+                            </li>
+                            <li class="exp-item">
+                                <div class="ei-l">
+                                    <span class="ei-co">VASS × CaixaBank</span>
+                                    <span class="ei-role">UI/UX Designer</span>
+                                </div>
+                                <span class="ei-yr">2017 - 2019</span>
+                            </li>
+                            <li class="exp-item">
+                                <div class="ei-l">
+                                    <span class="ei-co">SEAT</span>
+                                    <span class="ei-role">UI/UX Designer</span>
+                                </div>
+                                <span class="ei-yr">2016</span>
+                            </li>
+                            <li class="exp-item">
+                                <div class="ei-l">
+                                    <span class="ei-co">Lafosca · Mobile Jazz</span>
+                                    <span class="ei-role">Junior UI Designer</span>
+                                </div>
+                                <span class="ei-yr">2015 - 2016</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div
+                        style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                        <h3 class="detail-h">Awards</h3>
+                        <ul class="awards-list">
+                            <li class="award-item">
+                                <div class="aw-l">
+                                    <span class="aw-title">Best Mobile Banking App, Western Europe</span>
+                                    <span class="aw-issuer">Global Finance</span>
+                                </div>
+                                <span class="aw-yr">Sep 2018</span>
+                            </li>
+                            <li class="award-item">
+                                <div class="aw-l">
+                                    <span class="aw-title">Best Mobile Tech Project</span>
+                                    <span class="aw-issuer">The Banker Tech Project Awards</span>
+                                </div>
+                                <span class="aw-yr">Oct 2018</span>
+                            </li>
+                            <li class="award-item">
+                                <div class="aw-l">
+                                    <span class="aw-title">Best Project - Innovative Touchpoints &amp; Connected
+                                        Services</span>
+                                    <span class="aw-issuer">BAI Global Innovation Awards</span>
+                                </div>
+                                <span class="aw-yr">Oct 2018</span>
+                            </li>
+                            <li class="award-item">
+                                <div class="aw-l">
+                                    <span class="aw-title">Silver - Digital New Service or Application</span>
+                                    <span class="aw-issuer">London Design Awards</span>
+                                </div>
+                                <span class="aw-yr">Nov 2018</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div
+                        style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                        <h3 class="detail-h">Skills</h3>
+                        <div class="skills-row">
+                            <span class="skill-pill">Systems Thinking</span>
+                            <span class="skill-pill">Design Systems</span>
+                            <span class="skill-pill">0→1 Product Work</span>
+                            <span class="skill-pill">Cross-functional</span>
+                            <span class="skill-pill">Data-informed Design</span>
+                            <span class="skill-pill">Prototyping</span>
+                            <span class="skill-pill">A/B Testing</span>
+                            <span class="skill-pill">Research &amp; Synthesis</span>
+                            <span class="skill-pill">Best Slack Memes</span>
+                            <span class="skill-pill">Stakeholder Alignment</span>
+                            <span class="skill-pill">Design × Engineering</span>
+                            <span class="skill-pill">AI-assisted Workflows</span>
+                            <span class="skill-pill">Product Strategy</span>
+                            <span class="skill-pill">Good Vibes</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== CONTACT ==================== -->
+        <section id="contact">
+            <p class="s-label">Get in touch</p>
+
+            <div class="contact-headline">
+                <span class="tl"><span
+                        style="translate: none; rotate: none; scale: none; transform: translate(0px, 0%);">Say
+                        hi!</span></span>
+                <span class="tl">
+                    <span style="translate: none; rotate: none; scale: none; transform: translate(0px, 0%);"><a
+                            href="mailto:dvd.rod@proton.me" data-cursor="hi">Let's talk <svg width="0.7em"
+                                height="0.7em" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                style="display:inline-block;vertical-align:middle;margin-bottom:0.12em;">
+                                <path d="M3 15L15 3M15 3H5M15 3V13" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg></a></span>
+                </span>
+            </div>
+
+            <div class="contact-footer"
+                style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                <div class="cf-left">
+                    <div class="cf-email-row">
+                        <p>dvd.rod@proton.me</p>
+                        <button class="copy-btn" id="copyEmailBtn" aria-label="Copy email address">
+                            <svg width="13" height="13" viewBox="0 0 13 13" fill="none" stroke="currentColor"
+                                stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="4.5" y="4.5" width="7" height="7" rx="1.2"></rect>
+                                <path d="M1.5 8.5V2.5a1 1 0 0 1 1-1h6"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <p>Berlin, Germany</p>
+                </div>
+                <div class="cf-right">
+                    <a href="mailto:dvd.rod@proton.me" data-cursor="hi">Email</a>
+                    <a href="https://www.linkedin.com/in/david-rodriguez-product-designer/" target="_blank"
+                        rel="noopener" data-cursor="hi">LinkedIn</a>
+                    <a href="https://dribbble.com/dvdrod" target="_blank" rel="noopener" data-cursor="hi">Dribbble</a>
+                    <a href="https://dvdrod.gumroad.com/" target="_blank" rel="noopener" data-cursor="hi">Gumroad</a>
+                </div>
+            </div>
+
+            <p class="copy">© 2026 David Rodriguez · Senior Product Designer</p>
+        </section>
+
+    </main>
+
+    <!-- ==================== SCRIPTS ==================== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
