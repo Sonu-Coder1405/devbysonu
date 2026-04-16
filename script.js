@@ -248,3 +248,46 @@ if (copyBtn) {
         });
     });
 }
+
+
+/* new projects section - toggle hidden cards */
+
+const cards = document.querySelectorAll(".project-card");
+const btn = document.getElementById("loadMoreBtn");
+
+let visible = 6;
+
+// hide initially
+cards.forEach((card, i) => {
+    if (i >= visible) card.style.display = "none";
+});
+
+btn.addEventListener("click", () => {
+    visible += 6;
+
+    cards.forEach((card, i) => {
+        if (i < visible) card.style.display = "block";
+    });
+
+    if (visible >= cards.length) {
+        btn.style.display = "none";
+    }
+});
+
+/* new hero section - typewriter effect */
+
+// simple fade-in animation
+window.addEventListener("load", () => {
+    document.querySelector(".hero-bg-text").style.opacity = "1";
+});
+
+/* new hero section - marquee pause on hover */
+const marquee = document.querySelector(".marquee-inner");
+
+marquee.addEventListener("mouseenter", () => {
+  marquee.style.animationPlayState = "paused";
+});
+
+marquee.addEventListener("mouseleave", () => {
+  marquee.style.animationPlayState = "running";
+});
